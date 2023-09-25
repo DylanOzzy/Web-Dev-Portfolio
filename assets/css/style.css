@@ -1,16 +1,18 @@
 :root {
   --white: #fff;
   --black: #000;
-  --drkgray: darkgray;
+  --drkgray: grey;
+  --gray: darkgrey;
 }
 
 body {
   font-family: sans-serif;
+  width: 100%;
 }
 
 header {
   padding: 10px;
-  background-color: var(--drkgray);
+  background-color: var(--gray);
   color: var(--black);
   height: 85px;
 }
@@ -31,36 +33,77 @@ header h1 {
 
 header nav {
   float: right;
-
 }
 
-header ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-nav li {
-  display: block;
+header nav li {
   margin-top: 24px;
   display: inline-block;
+  margin: 23 0 0 15;
 }
 
 header a {
   text-decoration: none;
-  
+  color: var(--black);
+  background-color: var(--drkgray);
+  padding: 3px 5px;
+  border: 1px;
+  border-radius:5px;
 }
 
+header a:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
 
+section {
+  width: 100%;
+  min-height: fit-content;
+  margin: 0 0 60 0;
+  padding: 0 80 0 90;
+}
 
+h2 {
+  font-size: 32px;
+  width: 200px;
+  margin: 65 0 14 65;
+}
 
+section p {
+  line-height: 1.5;
+  font-size: 16px;
+}
 
+#workgrid {
+  display: grid;
+  grid-area: auto;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--gray);
+  padding: 10 0 30 40;
+}
 
+.mywork p {
+  font-weight: bold;
+}
 
+#item1 
 
+#item1:hover {
+  background-color: var(--drkgray);
+}
 
+#item2:hover {
+  background-color: var(--drkgray);
+}
 
+#seopicture {
+  max-width: 600px;
+  margin-right: 20px;
+}
 
-
+#preworkpicture {
+ max-width: 450px;
+}
 
 
 
