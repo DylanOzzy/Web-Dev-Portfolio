@@ -56,8 +56,7 @@ header a:hover {
 }
 
 section {
-  width: 100%;
-  min-height: fit-content;
+  width: 100%; 
   margin: 0 0 60 0;
   padding: 0 80 0 90;
 }
@@ -73,27 +72,22 @@ section p {
   font-size: 16px;
 }
 
+.mywork {
+  width: 100%;
+}
+
 #workgrid {
   display: grid;
-  grid-area: auto;
+  
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   background-color: var(--gray);
   padding: 10 0 30 40;
+  
 }
 
 .mywork p {
   font-weight: bold;
-}
-
-#item1 
-
-#item1:hover {
-  background-color: var(--drkgray);
-}
-
-#item2:hover {
-  background-color: var(--drkgray);
 }
 
 #seopicture {
@@ -104,6 +98,28 @@ section p {
 #preworkpicture {
  max-width: 450px;
 }
+
+#item1 {
+  position: relative;
+  justify-self: center;
+}
+
+#item2 {
+  position: relative;
+  justify-self: center;
+}
+
+#item1:hover {
+  background-color: var(--drkgray);
+  padding: 0 0 14 18;
+}
+
+#item2:hover {
+  background-color: var(--drkgray);
+  padding: 0 14 14 14;
+}
+
+
 
 
 
