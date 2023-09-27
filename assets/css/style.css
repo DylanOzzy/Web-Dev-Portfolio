@@ -38,7 +38,7 @@ header nav {
 header nav li {
   margin-top: 24px;
   display: inline-block;
-  margin: 23 0 0 15;
+  margin: 23 10 0 5;
 }
 
 header a {
@@ -56,7 +56,6 @@ header a:hover {
 }
 
 section {
-  width: 100%; 
   margin: 0 0 60 0;
   padding: 0 80 0 90;
 }
@@ -70,56 +69,72 @@ h2 {
 section p {
   line-height: 1.5;
   font-size: 16px;
+  line-height: 25px;
 }
 
 #workgrid {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "item1 item2";
+  grid-template-rows: 100%;
+  grid-template-columns: 54%;
+  column-gap: 15px;
   background-color: var(--gray);
-  padding: 20 0 30 50;
+  padding: 15 30 30 30;
   
 }
 
 .works p {
+  font-size: larger;
   font-weight: bold;
 }
 
 #seopicture {
-  max-width: 600px;
-  margin-right: 20px;
+  width: 100%;
+  object-fit: fill;
 }
 
 #preworkpicture {
- max-width: 450px;
+  width: 100%;
+  object-fit: fill;
 }
 
 #item1 {
-  
-  justify-self: center;
+  position: relative;
+  align-self: center;
 }
 
 #item2 {
   position: relative;
-  justify-self: center;
+  align-self: center;
 }
 
 #item1:hover {
   background-color: var(--drkgray);
-  padding: 0 0 14 20;
-  background-size: 620px 370px;
+  padding: 0 14 14 14;
+  
 }
 
 #item2:hover {
   background-color: var(--drkgray);
   padding: 0 14 14 14;
-  max-height: 285px;
-  overflow: visible;
+}
+
+#contactme {
+  text-align: center;
+}
+
+.contacth2 {
+  display: inline-block;
+  align-items: center;
+  margin: 30 30;
 }
 
 #contactme li {
+  align-items: center;
   list-style-type: none;
   display: inline-block;
+  margin: 3% 3%;
 }
 
 #contactme ul li a {
@@ -144,51 +159,132 @@ footer {
 } 
 
 @media screen and (max-width: 768px) {
-  body, .header, main {
-    width: 100%;
-    display: inline-block
-    }
   
-    #workgrid {
+  .works {
+    padding: 0 6%;
+  }
+  
+  #workgrid {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      "item1" 
+      "item2";
+    grid-template-rows: 50%;
+    grid-template-columns: 100%;
+    row-gap: 15px;
     background-color: var(--gray);
-    max-width: 90vw;
-    justify-content: center;
-    }
+    padding: 15 30 30 30;
+  }
+  
+}
 
-    #item1, #item2 {
-      position: relative;
-      max-width: 768px;
-    }
+@media screen and (max-width: 650px) {
 
-    #item1 img, #item2 img {
-      max-width: 90%;
-      padding
-    }
+  #header {
+    text-align: center;
+  }
 
+  #header nav {
+    float: none;
+    align-items: center;
+    display: inline-block;
+    top: 80px;
+    width: 100%;
+  }
 
-    nav {
-      position: absolute;
-      top: 90px;
-      
-      width: 300px;
-    }
-
-    #aboutme {
-      
-    }
-    
-    #contactme {
-      
-    }
+  #header nav li {
+  list-style-type: none;
+  margin-left: 3%;
+  margin-right: 3%;
+  }
   
 }
 
 
 
 
+
+/*
+nav {
+    align-items: center;
+    padding: 18 0 10 0;
+  }
+
+  nav li {
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    margin: 3% 3%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body, .header, main {
+    width: 100%;
+    display: inline-block;
+    }
+    
+    #aboutme {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #workgrid {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    }
+
+    #item1, #item2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+      max-width: 768px;
+    }
+
+    #item1 img, #item2 img {
+      max-width: 90%;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    nav {
+      position: fixed;
+      top: 90px;
+      width: 300px;
+    }
+    
+    #contactme {
+      position: relative;
+    }
+*/
 
 
 
