@@ -5,7 +5,7 @@
 - [Project Overview](#project-overview)
 - [Built With](#built-with)
 - [Features](#features)
-- [Screenshots/Demo](#screenshotsdemo)
+- [Screenshots/Deploy](#screenshotsdeploy)
 - [License](#license)
 
 
@@ -28,7 +28,7 @@ I made this webpage to demonstrate my current level of knowledge and to showcase
 - The images of previous works are links to the deployed application. 
 - This application is responsive to various screen sizes.
 
-## Screenshots/Repository
+## Screenshots/Deploy
 
 - [Dylan's Dev Portfolio](https://dylanozzy.github.io/Web-Dev-Portfolio/)
 ![Portfolio in Widescreen](assets\images\portfolioWIDE.png "portfolioWIDE.png")
