@@ -41,6 +41,7 @@ header nav li {
   margin: 23 10 0 5;
 }
 
+/*this selector gives the nav buttons styling*/
 header a {
   text-decoration: none;
   color: var(--black);
@@ -50,6 +51,7 @@ header a {
   border-radius:5px;
 }
 
+/*this selector changes the color of nav buttons on hover*/
 header a:hover {
   background-color: var(--black);
   color: var(--white);
@@ -72,6 +74,7 @@ section p {
   line-height: 25px;
 }
 
+/*/*this selector displays the projects i choose for this application.*/
 #workgrid {
   display: grid;
   grid-template-areas: 
@@ -102,11 +105,13 @@ section p {
 #item1 {
   position: relative;
   align-self: center;
+  text-align: center;
 }
 
 #item2 {
   position: relative;
   align-self: center;
+  text-align: center;
 }
 
 #item1:hover {
@@ -158,12 +163,14 @@ footer {
   padding: 0 0 25 0;
 } 
 
+/*this selector gives the page the ability to respond to different devices and screen size.*/
 @media screen and (max-width: 768px) {
   
   .works {
     padding: 0 6%;
   }
   
+  /*this selector turns the grid to a portrait orientation.*/
   #workgrid {
     display: grid;
     grid-template-areas: 
@@ -175,18 +182,19 @@ footer {
     background-color: var(--gray);
     padding: 15 30 30 30;
   }
-  
-}
 
-@media screen and (max-width: 650px) {
+  #item1 {
+    right: 3.8%;
+    width: 108%;
+  }
 
   #header {
+    align-items: center;
     text-align: center;
   }
 
   #header nav {
     float: none;
-    align-items: center;
     display: inline-block;
     top: 80px;
     width: 100%;
@@ -199,155 +207,3 @@ footer {
   }
   
 }
-
-
-
-
-
-/*
-nav {
-    align-items: center;
-    padding: 18 0 10 0;
-  }
-
-  nav li {
-    text-align: center;
-    list-style-type: none;
-    display: inline-block;
-    margin: 3% 3%;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-body, .header, main {
-    width: 100%;
-    display: inline-block;
-    }
-    
-    #aboutme {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    #workgrid {
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    }
-
-    #item1, #item2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: stretch;
-      max-width: 768px;
-    }
-
-    #item1 img, #item2 img {
-      max-width: 90%;
-      display: flex;
-      align-items: flex-start;
-    }
-
-    nav {
-      position: fixed;
-      top: 90px;
-      width: 300px;
-    }
-    
-    #contactme {
-      position: relative;
-    }
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
- li  {
- 
-  color: 000;
-}
-nav ul {
-  display: inline-flex;
-  justify-content: space-between;
-  margin-top: 2%;
-  width: 300px;
-}
-h1 {
-  font-size: 200%;
-}
-h2 {
-  margin: 2% 0;
-  font-size: 250%;
-}
-nav a {
-  color: #b9C6ae;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-
-display: flex;
-    flex-direction:column;
-section {
-    padding-right: 0;
-
-
-
-@media screen and (max-width: 768px) {
-  header, main {
-    flex-direction: column;
-  }
-
-  section {
-    padding-right: 0;
-  }
-
-  aside {
-    width: 100%;
-    text-align: center;
-  }
-}
-#seopicture {
-      max-width: 768px;
-    }
-    
-    
-    
-    #preworkpicture
