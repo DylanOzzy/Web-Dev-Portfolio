@@ -31,7 +31,9 @@ I made this webpage to demonstrate my current level of knowledge and to showcase
 ## Screenshots/Deploy
 
 - [Dylan's Dev Portfolio](https://dylanozzy.github.io/Web-Dev-Portfolio/)
+
 ![Portfolio in Widescreen](assets\images\portfolioWIDE.png "portfolioWIDE.png")
+
 ![Portfolio in Portrait](assets\images\portfolioTALL.png "portfolioTALL.png") 
 
 
